@@ -1,0 +1,59 @@
+@import url("reset.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  max-width: 650px;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: auto 221px;
+  grid-template-rows: 113px 458px 389px;
+  gap: 15px;
+  grid-template-areas: 
+  "header header header"
+  "bad bad bad-next"
+  "religion religion religion";
+}
+
+header {
+  background: black;
+  grid-area:header;
+  color:#DDE1D4;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding:15px;
+}
+
+.bad {
+  grid-area: bad;
+  display:flex;
+  align-items: flex-end;
+}
+
+.bad-next{
+  grid-area: bad-next;
+}
+
+div { 
+ background-color:#F14112; 
+}
+
+.religion {
+  grid-area: religion;
+}
+
+
+h2 {
+  font-size:200px;
+  font-weight: 600;
+}
+
+.religion div {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  font-size:32px;
+  color:#DDE1D4;
+  margin-top:20px;
+}

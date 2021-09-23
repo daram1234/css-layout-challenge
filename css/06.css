@@ -1,0 +1,169 @@
+@import url("reset.css");
+
+body {
+  background-color: #EFEA45;
+  text-transform: uppercase; 
+  overflow: auto;
+}
+
+.grid{
+  padding:1%;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns : 2% auto auto 2%;
+  grid-template-rows: 3% auto auto 3%;
+
+  font-size:18px;
+  font-weight: 500;
+  font-style: italic;
+}
+.top{
+  grid-column: 1 / -1;
+}
+.bottom{
+  grid-column: 1 / -1;
+  grid-row : -2 / -1;
+}
+nav{
+  grid-column: 1 / 2;
+  grid-row : 2 / 3;
+}
+.sns{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.order{
+  grid-column: -2 / -1;
+  grid-row : 2 / 3;
+}
+.reservation{
+  grid-column: -2 / -1;
+  grid-row: 3 / 4;
+}
+.left{
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  
+  background-image: url("https://curry.cafe/wp-content/uploads/2018/11/leader-10.jpg");
+  background-size: cover;
+}
+.right{
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+
+  background-image: url("https://curry.cafe/wp-content/uploads/2018/11/leader-02.jpg");
+  background-size: cover; 
+}
+
+.top,
+.bottom{
+  border: 4px solid #FC6A37;
+  overflow: hidden;
+  color:#FC6A37;
+  background-color: white;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav,
+.social,
+.order,
+.reservation{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-right: 4px solid #FC6A37;
+  border-left: 4px solid #FC6A37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav,
+.order{
+  border-bottom: 4px solid #FC6A37;
+}
+
+nav{
+  color:white;
+  background-color: #FC6A37;
+}
+ul{
+  display:flex;
+  justify-content: center;
+}
+
+.social{
+ color: #FC6A37;
+ background-color: white;
+}
+.social .newsletter
+{
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #FC6A37;
+  white-space: nowrap;
+  text-orientation: sideways;
+  transform: rotate(180deg) ;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg{
+  width:18px;
+  height: 18px;
+}
+.facebook{
+  margin-bottom:10px; 
+}
+
+.order,
+.reservation{
+  color:white;
+  background-color: #40AC49;
+}
+
+.main{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color:white;
+  text-align: center;
+  font-size:100px;
+  font-weight: 900;
+}
+.chat{
+  width:64px;
+  height:64px;
+  border-radius: 5px;
+  background-color: #FC6A37;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position:absolute;
+  bottom:3%;
+  right:2%;
+}
+.chat svg{
+  width:25px;
+  height:23px;
+}
+

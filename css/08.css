@@ -1,0 +1,121 @@
+@import url("reset.css");
+
+body {
+  display: grid;
+  grid-template-columns: minmax(min-content, auto) 40px minmax(min-content, 40%);
+}
+
+.left{
+  background-color: #FF7400;
+  color:#FE3100;
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+.grid_div{
+  width:100%;
+  height: 200px;
+
+  display: grid;
+  grid-template-columns: 40px minmax(max-content, auto) minmax(min-content, 200px);
+  grid-template-rows: auto auto;
+  gap:2px;
+  background-color: #FE3100;
+  border: 2px solid #FE3100;
+  border-bottom:0px;
+}
+.grid_div:last-child{
+  border-bottom: 2px solid #FE3100;
+}
+.grid_div:hover{
+  border: 2px solid white;
+  background-color: #fff;
+  color:white;
+}
+.grid_div:hover > .btn button{
+  background-color: #fff;
+}
+.grid_div:hover + .grid_div{
+  border-top:0px;
+}
+.grid_div > div{
+  background-color: #FF7400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+}
+.vertical{
+  grid-row: 1 / -1;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg) ;
+}
+.big_font{
+  grid-row: 1 / -1;
+  justify-content: flex-start !important;
+  font-size: 100px;
+  padding:10px;
+}
+.btn{
+  padding: 0 20px;
+}
+button{
+  width: 100%;
+  padding:10px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #FE3100;
+  color: #FF7400;
+}
+
+.gap_wrap{
+  background-color: #171BFF;
+}
+.gap{
+  width: 100%;
+  height: 90vh;
+  display:flex;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  font-size:20px;
+  font-weight: 700;  
+}
+.gap > div{
+  width: 100%;
+  height: 50%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.gap > div:first-child{
+  background-color: #FF3AFF;
+}
+.gap > div:last-child{
+  background-color: #171BFF;
+  transform: rotate(180deg) ;
+}
+
+.right{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 80px;
+  grid-auto-rows: minmax(200px, max-content);
+  gap: 15px;
+  background-color: #FE3100;
+  padding: 15px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.right_header{
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+.right > div:not(.right_header){
+  border-top: 2px solid black;
+  padding-top: 20px;
+}
+.right > div:not(.right_header) > p{
+  font-size: 20px;
+}

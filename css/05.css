@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:repeat(3, 1fr);
+}
+
+.black{
+  background-color: black;
+  color:white;
+}
+.red{
+  background-color: #FE3100;
+  grid-row: 2 / -1;
+  grid-column: 1 / 2;
+}
+.yellow{
+  background-color: #FFC903;
+  grid-row: 3 / -1;
+  grid-column: 2 / 3;
+}
+.speakers{
+  grid-row: 1 / -1;
+  grid-column: 3 / 4;
+}
+.artists{
+  grid-row:1 / -1;
+  grid-column: 4 / -1;
+}
+div:nth-child(2){
+  background-color: #6C21FF;
+}
+
+div
+{
+  padding:10px;
+  font-size: 3vw;
+}
+.black{
+  vertical-align: text-bottom;
+}
+.upside_down{
+  display:inline-block;
+  transform:rotate(180deg);
+  vertical-align: text-bottom;
+}
+
+.red li{
+  margin-bottom:5px;
+}
+.speakers p,
+.artists p{
+  font-size: 1.5vw;
+  margin-bottom: 15px;
+}
+.speakers li,
+.artists li{
+  font-size: 2.5vw;
+  padding: 3px 0;
+}
+.speakers li:hover,
+.artists li:hover{
+  background-color: #6C21FF;
+}

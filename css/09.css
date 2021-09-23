@@ -1,0 +1,126 @@
+@import url("reset.css");
+
+body {
+  background-color: black;
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(min-content, 1fr));
+  grid-template-rows: repeat(10, 1fr);
+  gap:3px;
+}
+div{
+  background-color: white;
+}
+.office{
+  grid-column: span 3;
+  grid-row: 1 / -1;
+}
+.home{
+  grid-column: span 3;
+  grid-row: 1 / -3;
+}
+.services{
+  grid-column: span 3;
+  grid-row: -3 / -1;
+}
+.picture{
+  background-size: cover; 
+}
+.picture:nth-child(4){
+  grid-column: span 3;
+  grid-row: 1 / -3;
+  background-image: url("https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/interior06hero1536x1040.ashx?h=1040&w=1536&hash=B67B6942D81EEFDDCFC4C5E820716CD9");
+}
+.picture:nth-child(5){
+  grid-column: span 3;
+  grid-row: span 4;
+  background-image: url("https://assets.iwgplc.com/image/upload/Regus/Website/homepage-product-office-space.jpg");
+}
+.picture:nth-child(6){
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/interior06hero1536x1040.ashx?h=1040&w=1536&hash=B67B6942D81EEFDDCFC4C5E820716CD9");
+}
+.picture:nth-child(7){
+  background-image: url("https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/interior06hero1536x1040.ashx?h=1040&w=1536&hash=B67B6942D81EEFDDCFC4C5E820716CD9");
+}
+.picture:nth-child(8){
+  background-image: url("https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/interior06hero1536x1040.ashx?h=1040&w=1536&hash=B67B6942D81EEFDDCFC4C5E820716CD9");
+}
+.picture:nth-child(9){
+  grid-row: span 2;
+  background-image: url("https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/interior06hero1536x1040.ashx?h=1040&w=1536&hash=B67B6942D81EEFDDCFC4C5E820716CD9");
+}
+.picture:nth-child(10){
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWptHL?ver=f9a8&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF&aim=true");
+}
+.picture:nth-child(11){
+  grid-row: span 2;
+  background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWptHL?ver=f9a8&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF&aim=true");
+}
+.picture:nth-child(12){
+ background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWptHL?ver=f9a8&q=90&m=2&h=768&w=1024&b=%23FFFFFFFF&aim=true");
+}
+.picture:nth-child(13){
+  grid-column: span 4;
+  grid-row: span 2;
+  background-image: url("https://storage.googleapis.com/cr-resource/image/15ae1971af98db6cbba01c2a81b10c48/dlarchitecture/700/5dcc31380e546389ea39e4e20c796f05.jpg");
+}
+.picture:nth-child(14){
+  background-image: url("https://www.colliers.com/-/media/images/colliers/asia/regional-image-library/1536x1040-hero-researchnews/interior06hero1536x1040.ashx?h=1040&w=1536&hash=B67B6942D81EEFDDCFC4C5E820716CD9");
+}
+
+.category{
+  text-transform: uppercase;
+}
+h1{
+  font-size: 24px;
+  font-weight: 500;
+}
+h6{
+  font-weight: 600;
+}
+.office,
+.home,
+.services{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.office > *,
+.home > *,
+.services > *{
+  margin: 10px;
+}
+.menu{
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap:2px;
+  margin:0;
+  margin-bottom: 90%;
+  background-color: black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+}
+.menu > p{
+  background-color: white;
+  padding: 10px;
+}
+.menu > p:hover{
+  background-color: #EEEEEE;
+}
+.info{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home > h1{
+  font-size:30px;
+}
+.services{
+  justify-content: space-between;
+}

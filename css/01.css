@@ -1,0 +1,63 @@
+@import url("reset.css");
+
+body {
+  background-color:#F6F6F6;
+  padding:50px 25px;
+  max-width: 770px;
+  width: 100%;
+  margin:0 auto;
+}
+header{
+    margin-bottom: 100px;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+h1{
+  font-size:130px;
+  font-weight: 600;
+}
+h3{
+  font-size:50px;
+  font-weight: 700;
+  display:flex;
+  align-items: flex-end;
+}
+
+hr{
+  border-top : 2px solid black;
+}
+.texts{
+  padding:5px;
+  font-size: 11px;
+  font-weight: 500;
+  display:flex;
+  justify-content: space-between;
+}
+#p{
+  display: flex;
+}
+#p_right{
+  margin-left: 100px;
+}
+
+.container{
+  padding:5px;
+  display:flex;
+  justify-content: space-around;
+}
+.circle{
+  border-radius:200px;
+  height:230px;
+  width:230px;
+}
+.blue .circle{
+  background-color:#bfe2ef;
+}
+.gray .circle{
+  background-color:#616365;
+}
+.green .circle{
+  background-color:#2ea768;
+}

@@ -1,0 +1,66 @@
+@import url("reset.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+
+  margin:0 auto;
+  display: grid;
+  grid-template:
+    "grey grey green green" 2fr
+    "red red pink purple" 1fr
+    "red red yellow red_pink" 1fr
+    / 1fr 1fr 1fr 1fr;
+}
+
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.grey{
+  background-color: #DAE7DE;
+  grid-area:grey;
+  color:#f44606;
+}
+.green{
+  background-color: #008a69;
+  grid-area:green;
+  color:white;
+}
+.red{
+  background-color: #f44606;
+  grid-area:red;
+  color:white;
+}
+.pink{
+  background-color: #F7ABC5;
+  grid-area:pink;
+  color:#f44606;
+}
+.purple{
+  background-color: #5F5FA9;
+  grid-area:purple;
+  color:white;
+}
+.yellow{
+  background-color: #FFC029;
+  grid-area:yellow;
+  color:#f44606;
+}
+.red_pink{
+  background-color: #F97374;
+  grid-area:red_pink;
+  color:white;
+} 
+
+.big{
+  font-size: 50px;
+  font-weight: 700;
+}
+.small{
+  font-size: 35px;
+  font-weight: 600;
+}
